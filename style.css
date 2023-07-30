@@ -60,11 +60,26 @@ a{
 }
 .nav-item a{
     color: #a8a9b4;
+    transition: 0.15s;
 }
 
 .navbar-nav .nav-link.active, .nav-item a:hover{
     color: #149ddd;
     transition: 0.15s;
+}
+.offcanvas{
+    border: none;
+    background: none;
+    margin: 0;
+}
+.btn-close {
+    --bs-btn-close-opacity: 1!important;
+    --bs-btn-close-hover-opacity: 1!important;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    /* outline: none;
+    border: none; */
 }
 /* Sidebar Section End  */
 
@@ -175,7 +190,6 @@ a{
 #contact{
     box-sizing: border-box;
     margin-left:300px;
-    height: 50vh;
 }
 #contact h2{
     color: #173b6c;
@@ -218,10 +232,23 @@ a{
         margin-left: 0;
     }
     #footer{
-        position: relative;
+        position: static;
         width: 100%;
+        z-index: 1;
+        margin-top: 40px;
     }
 @media (max-width:992px){
+    #home .home-box > h2{
+        font-weight: bold;
+        font-size: 2.5rem;
+        /* letter-spacing: 2px; */
+    }
+    #home .home-box > p{
+        color:white;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        /* letter-spacing: 2px; */
+    }
     #about{
         margin-left: 0;
     }
