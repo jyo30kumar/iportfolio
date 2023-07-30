@@ -240,6 +240,7 @@ a{
 @media (max-width:992px){
     #sidebar-nav{
         width:100px;
+        background-color:blue;
     }
     #home .home-box > h2{
         font-weight: bold;
